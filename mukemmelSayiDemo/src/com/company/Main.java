@@ -1,9 +1,12 @@
 package com.company;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        int number=28;
+        Scanner input=new Scanner(System.in);
+        System.out.println("Sayı giriniz: ");
+        int number=input.nextInt();
         int total=0;
         boolean mukemmelSayi;
         for(int i=1;i<number;i++){
@@ -17,6 +20,6 @@ public class Main {
         else{
             System.out.println("Sayı mükemmel sayı değildir.");
         }
-	// write your code here
+
     }
 }
